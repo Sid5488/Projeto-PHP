@@ -1,0 +1,1876 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Padronização*/
+h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-bottom: 40px;
+}
+
+@font-face {
+    font-family: 'titillium';
+    src: url("../fonts/Titillium_Web/Titillium.ttf");
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'titillium';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#nome_usuario {
+    border-radius: 10px 0px 10px 10px;
+    border: 0px solid;
+}
+
+#senha_usuario {
+    border-radius: 10px 0px 10px 10px;
+    border: 0px solid;
+}
+
+/*Estilização*/
+
+#menu_desktop_principal {
+    width: 100%;
+    height: 100px;
+    background-color: #ba222e;
+    position: fixed;
+    border-bottom: 0.5px solid rgba(0,0,0,0.4);
+    z-index: 4;
+}
+
+.centra_menu {
+    width: 1400px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ba222e;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    background: url(../imagens/logo.png);
+    margin-top: 10px;
+}
+
+.menuu {
+    float: left;
+    width: 820px;
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.item_menu:hover {
+    cursor: pointer;
+    background-color: #f5b70e;
+    border-radius: 0px 15px 0px 15px;
+    padding-top: 8px;
+    transition: 0.5s;
+}
+
+.form {
+    float: right;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.usuario {
+    float: left;
+    width: 200px;
+    height: auto;
+    color: white;
+}
+
+.senha {
+    float: left;
+    width: 190px;
+    height: auto;
+    color: white;
+}
+
+.botao {
+    float: right;
+    width: auto;
+    padding-top: 18px;
+    margin-right: 15px;
+}
+
+.item_menu {
+    float: left;
+    width: 110px;
+    height: 45px;
+    color: white;
+    margin-left: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 0.9;
+    padding-top: 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: 'titillium';
+}
+
+.itens:hover {
+    background-image: linear-gradient(to top, rgba(240, 220, 141), rgba(255,255,255,0.5));
+    opacity: 1;
+    border-color: red;
+}
+
+.slider {
+    width: 100%;
+    height: 424px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+#menu_secundario {
+    float: left;
+    width: 200px;
+    min-height: 790px;
+    max-height:inherit;
+}
+
+.segura_conteudo {
+    width: 100%;
+    min-height: 790px;
+    max-height: auto;
+    float: left;
+}
+
+.conteudo {
+    width: 1200px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.produtos {
+    float: left;
+    width: 1000px;
+    min-height: 700px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.itens {
+    float: left;
+    width: 300px;
+    height: 300px;
+    background-color: #fafafa;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(0,0,0,0.2);
+}
+
+#rodape {
+    width: 100%;
+    height: 150px;
+    background-color: #ba222e;
+    float: left;
+}
+
+.rodape_conteiner {
+    width: 1200px;
+    height: 150px;
+}
+
+.redes_sociais {
+    width: 150px;
+    height: 222px;
+    margin-left: 1225px;
+    margin-top: 200px;
+    position: fixed;
+}
+
+.sociais {
+    width: 150px;
+    height: 70px;
+}
+
+.sistema {
+    float: left;
+    width: 150px;
+    height: 60px;
+    color: white;
+    transition: 0.5s;
+    margin-top: 50px;
+    margin-left: 35px;
+    border: solid 0.5px #f5b70e;
+}
+
+.sistema:hover {
+    transition: 0.5s;
+    background-color: #f5b70e;
+    border: solid 0.5px white;
+}
+
+.sistema:hover a {
+    color: black;
+}
+
+.sistema p {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.endereco {
+    float: left;
+    width: 600px;
+    height: 60px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 50px;
+    border: solid 0.5px #f5b70e;
+}
+
+.endereco p {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.app {
+    float: right;
+    width: 200px;
+    height: 80px;
+    color: white;
+    transition: 0.5s;
+    margin-top: 40px;
+    margin-right: 35px;
+    border: solid 0.5px #f5b70e;
+}
+
+.app:hover {
+    transition: 0.5s;
+    background-color: #f5b70e;
+    border: solid 0.5px white;
+    color: black;
+}
+
+.app:hover a {
+    color: black;
+}
+
+.img_app {
+    float: left;
+    width: 80px;
+    height: 80px;;
+    background: url();
+    background-color: aqua;
+    background: url(../icons/iconDroid2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.baixar_app {
+    float: left;
+    width: 120px;
+    height: 80px;
+}
+
+.baixar_app p {
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.img_prod {
+    width: 150px;
+    height: 160px;
+    background-color:aqua;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background: url(../imagens/item.png);
+    border-radius: 15px 0px 15px 0px;
+}
+
+.descricao {
+    width: inherit;
+    height: 90px;
+    margin-bottom: 2px;
+}
+
+.nomeProd {
+    width: inherit;
+    height: auto;
+    padding-left: 10px;
+    box-sizing: border-box; 
+    margin-bottom: 5px;
+}
+
+.desc {
+    width: inherit;
+    height: auto;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.preco {
+    width: inherit;
+    height: auto;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.detalhes {
+    float: right;
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+}
+
+.img_facebook {
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../imagens/face.png);
+}
+
+.img_instagram {
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../imagens/insta.png);
+}
+
+.img_twitter {
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../imagens/twt.png);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 1159px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  width: 1200px;
+  height: 40px;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  padding-top: 25px;
+  margin-left: 105px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.itens_seg {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    background-color: #f5b70e;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 5px;
+    transition: 1s;
+}
+
+.itens_seg:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+/* Página de curiosidades */
+
+.intro_curiosidade {
+    width: 1200px;
+    min-height: 600px;
+    max-height: auto;
+    padding-top: 100px;
+}
+
+.intro_curiosidade_impar {
+    width: 1200px;
+    min-height: 600px;
+    max-height: auto;
+    padding-top: 100px;
+    background-color: #dbdde0;
+}
+
+.curiosidade_impar {
+    width: 100%;
+    min-height: 300px;
+    max-height: auto;
+    background-color: #dbdde0;
+}
+
+.titulo_section {
+    width: 100%;
+    height: 70px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.lado_esquerdo {
+    float: left;
+    width: 550px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.subtitulos {
+    width: 535px;
+    height: 43px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.texto_p {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.lado_direito {
+    float: left;
+    width: 550px;
+    min-height: 300px;
+    max-height: auto;
+    margin-bottom: 20px;
+}
+
+.img_origem {
+    width: 500px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.campeonato {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    max-height: auto;
+    margin-top: 15px;
+    background-color: #dbdde0;
+}
+
+.img_pizza_champions {
+    width: 90%;
+    height: 250px;
+    margin-left: 10%;
+    background-image: url(../imagens/world_pizza_championship.jpg);
+}
+
+.intro_promo {
+    width: 100%;
+    min-height: 800px;
+    max-height: auto;
+    padding-top: 130px;
+}
+
+.banner_promo {
+    width: 1200px;
+    height: 424px;
+    background-color: black;
+}
+
+.detalhes_promo_esp {
+    width: 1200px;
+    min-height: 15px;
+    max-height: auto;
+    background-color: orange;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.itens_promo {
+    width: 1200px;
+    min-height: 300px;
+    max-height: auto;
+    background-color: gray;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.promo_center {
+    width: 1100px;
+    min-height: 400px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.item_promo {
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: mediumseagreen;
+}
+
+.tipo_de_oferta {
+    width: 100%;
+    height: 70px;
+    color: white;
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.img_oferta {
+    width: 98%;
+    height: 420px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+    box-sizing: border-box;
+}
+
+.m_detalhes {
+    float: left;
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 400px;
+    background-color: red;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.img_oferta:hover {
+    transition: 1s;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.img_oferta:hover .m_detalhes {
+    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+    height: 250px;
+    background-color: white; 
+    margin-top: 170px;
+}
+
+/*Introdução sobre*/
+
+.intro_sobre {
+    width: 100%;
+    min-height: 300px;
+    max-height: auto;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.intro_sobre h1 {
+    width: 600px;
+    color: black;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+.texto_sobre {
+    float: left;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.intro_sobre .lado_esquerdo {
+    float: left;
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.intro_sobre .lado_direito {
+    float: left;
+    width: 500px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.img_sobre {
+    float: left;
+    width: 500px;
+    height: 600px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.intro_loja {
+    width: 100%;
+    min-height: 800px;
+    max-height: auto;
+    padding-top: 100px;
+    max-height: auto;
+    box-sizing: border-box;
+}
+
+.lojas_fisicas {
+    float: left;
+    width: 900px;
+    min-height: 800px;
+    max-height: auto;
+}
+
+.seja_franquiado {
+    float: left;
+    width: 300px;
+    min-height: 300px;
+    max-height: auto;
+}
+
+.center_lojas_f {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lojas {
+    width: 90%;
+    min-height: 300px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.lojas_itens {
+    float: left;
+    width: 250px;
+    height: 350px;
+    background-color: #fafafa;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(0,0,0,0.2);
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+
+.center_franquia {
+    width: 100%;
+    min-height: 800px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+}
+
+.franq {
+    width: 90%;
+    min-height: 300px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #dbdde0;
+}
+
+.item_franquia {
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 10px;
+    padding-top: 125px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 5px 0.5px rgba(0,0,0,0.2);
+}
+
+.item_franquia:hover {
+    transition: 1s;
+    width: 250px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.detalhes_loja {
+    width: 0%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: 250px;
+    transition: 0.5s;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #ba222e;
+}
+
+.lojas_itens:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+.lojas_itens:hover .detalhes_loja {
+    width: 70%;
+    transition: 1s;
+    visibility: visible;
+    opacity: 1;
+    margin-left: 75px;
+}
+
+.adicionar_img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ba222e;
+    box-sizing: border-box;
+    padding-top: 25px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.img_plus {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../imagens/plus.png);
+}
+
+.intro_prod_mes {
+    width: 100%;
+    min-height: 800px;
+    max-height: auto;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.mais_vendidos {
+    width: 100%;
+    min-height: 420px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center_itens_vendidos {
+    width: 1075px;
+    min-height: 420px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itens_vendidos {
+    float: left;
+    width: 250px;
+    height: 350px;
+    background-color: dodgerblue;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.vendido2 {
+    width: 0px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.itens_vendidos:hover .vendido2 {
+    width: 150px;
+    height: 350px;
+    background-color: #ba222e;
+    transition: 1s;
+}
+
+.vendido h1 {
+    width: 300px;
+    height: 30px;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.intro_contato {
+    width: 100%;
+    min-height: 800px;
+    max-height: auto;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+#formulario {
+    border-right: 0px solid;
+    padding: 10px;
+}
+
+p.formm {
+    padding: 10px;
+    margin: auto;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+}
+
+input:hover, textarea:hover {
+    background-color: #dddddd;
+}
+
+legends {
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#usuario {
+    border-color: #cecece;
+    margin: 20px;
+}
+
+
+fieldset#sexo {
+    width: 200px;
+}
+
+fieldset#celular {
+    width: 200px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+.cms {
+    width: 100%;
+    min-height: 800px;
+    max-height: auto;
+}
+
+.caixa_menu {
+    width: 1200px;
+    height: 200px;
+    background-color: #ba222e;
+    border-radius: 50px 50px 0px 0px;
+    box-sizing: border-box;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa_titulo_subtitulo {
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: white;
+}
+
+.titulo_pizzaria {
+    width: 300px;
+    height: auto;
+}
+
+.titulo_pizzaria h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.subtitulo_cms {
+    width: 420px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.subtitulo_cms h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img_cms {
+    float: left;
+    width: 300px;
+    height: 140px;
+    margin-left: 150px;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/logo.png);
+}
+
+.login_cms {
+    width: 1200px;
+    height: 250px;
+    background-color: #f5b70e;
+}
+
+.adm_conteudo {
+    float: left;
+    width: 180px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.adm_fale_conosco {
+    float: left;
+    width: 180px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.adm_usuario {
+    float: right;
+    width: 650px;
+    height: 235px;
+    margin-right: 50px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.login_usuario {
+    float: left;
+    width: 128px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.nome_usuario {
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+.logout {
+    float: right;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 205px;
+}
+
+.desenvolvedor {
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.conteudo_cms {
+    width: 100%;
+    min-height: 500px;
+    max-height: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.conteudo_cms .conteudo {
+    width: 1200px;
+    min-height: 800px;
+    max-height: auto;
+    padding-top: 25px;
+    overflow: hidden;
+}
+
+.pags {
+    width: 1050px;
+    min-height: 750px;
+    max-height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.itens_pags {
+    width: 510px;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pags .lado_esquerdo {
+    width: 510px;
+    min-height: 600px;
+    max-height: auto;
+}
+
+.pags .lado_direito {
+    width: 510px;
+    min-height: 600px;
+    max-height: auto;
+    margin-left: 30px;
+}
+
+.cms_img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-image: url(../imagens/frajola.png);
+    background-repeat: no-repeat;
+}
+
+#cms {
+    width: 1200px;
+    min-height: 800px;
+    max-height: auto;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+
+.descricao_cms {
+    float: left;
+    width: 300px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px; 
+    font-size: 20px;
+    color: white;
+}
+
+.pag_cms {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/cms.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img_adm_cont {
+    width: 128px;
+    height: 128px;
+    background-image: url(../imagens/adm_cont.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descricao_adm_cont {
+    width: 150px;
+    height: 30px;
+    font-size: 22px;
+}
+
+.img_fale {
+    width: 128px;
+    height: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../imagens/fale_conosco.png);
+}
+
+.desc_fale {
+    width: 120px;
+    height: 30px;
+    font-size: 22px;
+}
+
+.img_usuario {
+    width: 128px;
+    height: 128px;
+    background-image: url(../imagens/users.png);
+}
+
+.desc_usuario {
+    width: 128px;
+    height: 30px;
+    font-size: 22px;
+}
+
+.rodape_cms {
+    width: 1200px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: #ba222e;
+    border-radius: 0px 0px 50px 50px;
+}
+
+/* PÁGINA FALE CONOSCO CMS ESTILIZAÇÃO */
+
+.cms_select {
+    width: 120px;
+    height: 25px;
+    border: 0px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.cliente_resp {
+    width: 90%;
+    min-height: 300px;
+    max-height: auto;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tabela_titulo {
+    width: 100%;
+    height: 60px;
+    color: #ba222e;
+}
+
+.manipula_titulo {
+    width: 230px;
+    height: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px; 
+}
+
+.coment {
+    width: 100%;
+    height: 50px;
+}
+
+.nome_coment {
+    float: left;
+    width: 149px;
+    height: 100%;
+    margin-left: 15px;
+    font-size: 28px;
+}
+
+.comentario {
+    float: left;
+    width: 779.5px;
+    height: 100%;
+    font-size: 28px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.coments {
+    float: left;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 15px 15px;
+    border-bottom: 0.5px solid #bbb;
+}
+
+.coments .nome_coment {
+    width: 149px; 
+    height: auto;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.coments .comentario {
+    font-size: 20px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.btnBuscar {
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: white;
+    border: 0px solid;
+    padding: 3px;
+}
+
+.visu_delet {
+    float: right;
+    width: 150px;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+}
+
+.visualizar {
+    float: left;
+    width: 75px;
+    height: 50px;
+    background-image: url(../icons/visu.png);
+    background-repeat: no-repeat;
+}
+
+.deletar {
+    float: left;
+    width: 75px;
+    height: 50px;
+    background-image: url(../icons/deletar.png);
+    background-repeat: no-repeat;
+}
+
+.borda{
+    float: left;
+    width: 1px;
+    min-height: 63px;
+    max-height: 150px;
+    background-color: #ba222e;
+}
+
+/* ESTILIZAÇÃO DA MODAL */
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+#modal {
+    width: 1200px;
+    min-height: 400px;
+    max-height: auto;
+    margin-top: 20vh;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#fechar {
+    margin-left: 1150px;
+}
+
+.mostrar {
+    width: 100%;
+    min-height: 400px;
+    max-height: auto;
+    border-bottom: solid 1px grey;
+}
+
+.titulo_dd {
+    float: left;
+    width: 100px;
+    min-height: 30px;
+    max-height: auto;
+    border-right: solid 1px grey;
+}
+
+.dd_mostrar {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.mostrar_dd {
+    min-width: 100px;
+    max-width: 1100px;
+    height: 30px;
+    overflow: auto;
+    padding-left: 15px;
+}
+
+.dd_dados {
+    float: left;
+    width: 1000px;
+    min-height: 400px;
+    max-height: auto;
+}
+
+/*  ESTILIZAÇÃO DA ADIMINISTRAÇÃO DE USUÁRIOS */
+
+.nv {
+    width: 900px;
+    min-height: 100px;
+}
+
+.niveis {
+    float: left;
+    width: 350px;
+    height: 150px;
+    border-radius: 15px;
+    margin-left: 30px;
+    background-color: rgba(191, 188, 187, 4);
+}
+
+.usuarios {
+    float: left;
+    width: 350px;
+    height: 150px;
+    margin-left: 100px;
+    border-radius: 15px; 
+    background-color: rgba(191, 188, 187, 4);
+}
+
+/* ESTILIZAÇÃO DA TABELA DO NÍVEL */
+
+.tabela_niveis {
+    width: 1000px;
+    min-height: 600px;
+    max-height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.titulo_niv {
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: solid 1px #ba222e;
+}
+
+.conteudo_tabela_nv {
+    width: 100%;
+    min-height: 600px;
+    max-height: auto;
+    overflow: hidden;
+}
+
+.cad_nv {
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #ba222e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.nome_admin {
+    float: left;
+    width: 450px;
+    height: 50px;
+    text-align: center;
+    padding-top: 2px;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+.nivel {
+    float: left;
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nivel2 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.titulo_nv {
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.icon_nv {
+    width: 100px;
+    height: 100px;
+    background: url(../icons/icon_nv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon_usuario{
+    width: 100px;
+    height: 90px;
+    background: url(../icons/nivel_adm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.status {
+    float: left;
+    width: 64px;
+    height: 50px;
+}
+
+/* ESTILIZAÇÃO DA PÁGINA CADASTRO DE USUÁRIOS */
+
+.cad_usuarios {
+    width: 1000px;
+    min-height: 600px;
+    max-height: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.titulo_usuario {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+    border-bottom: solid 1px #ba222e;
+    box-sizing: border-box;
+}
+
+.campo_cadastro {
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.camp {
+    width: 100px;
+    height: 50px;
+}
+
+.cad_camp {
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+.dados_preencher {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.cad {
+    width: 300px;
+    height: 50px;
+}
+
+.cadastrar_nv {
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #ba222e;
+    border-radius: 15px;
+}
+
+.nome_nv {
+    float: left;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+.nome_nv input {
+    width: 250px;
+    height: 20px;
+    margin-left: 150px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.btn_enviar_cad {
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+.mostrar_cad {
+    width: 100%;
+    min-height: 200px;
+    max-height: auto;
+    margin-top: 20px;
+}
+
+.titulo_niv2 {
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 28px;
+    text-align: center;
+    border-top: solid 1px #ba222e;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: solid 1px #ba222e; 
+    border-bottom: solid 1px #ba222e;
+}
+
+.niv_cad {
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #ba222e;
+    border-radius: 15px;
+}
+
+.edit_nv {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.delete_nv {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+}
+
+.ck_nv {
+    float: left;
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+.caixa_btn {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 700px;
+    margin-bottom: 25px;
+}
+
+.btnSalvar {
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+    border: solid 0.5px gray;
+}
+
+/* BEM-VINDO CMS */
+
+.bem-vindo {
+    width: 100%;
+    min-height: 600px;
+    max-height: auto;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+    box-sizing: border-box;
+}
+
+/* MOSTRAR USUÁRIOS CADASTRADOS */
+
+form {
+    overflow: hidden;
+}
+
+.most_usuarios {
+    width: 480px;
+    min-height: 100px;
+    max-height: auto;
+    margin-top: 50px;
+    margin-left: 220px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: solid 1px #ba222e;
+}
+
+.nm_usuario {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: solid 1px #ba222e;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.nm_user {
+    float: left;
+    width: 300px;
+    height: 64px;
+    font-size: 28px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.bd_usuario {
+    width: 100%;
+    min-height: 70px;
+    max-height: auto;
+}
+
+.users {
+    width: 100%;
+    min-height: 70px;
+    max-height: auto;
+    border-radius: 15px;
+    border-bottom: solid 1px #ba222e;
+}
+
+.usuario_nm {
+    width: 100%;
+    min-height: 70px;
+    max-height: auto;
+}
+
+/* ADM CONTEÚDO CURIOSIDADE LADO ESQUERDO DA PÁGINA */
+
+.curiosidadeC {
+    width: 300px;
+    min-height: 200px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto_esquerdo {
+    margin-top: 15px;
+}
+
+.imagemC {
+
+}
+
+.cad_curiosidade {
+    width: 1000px;
+    min-height: 200px;
+    max-height: auto;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.titulo_curiosidade {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 28px;
+    border-bottom: solid 1px #ba222e;
+    box-sizing: border-box;
+}
+
+.most_curiosidade {
+    width: 1000px;
+    min-height: 100px;
+    max-height: auto;
+}
+
+.titulo_most_curiosidade {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #ba222e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: solid 1px #ba222e;
+}
+
+.curiosidade_cadastro {
+    width: 100%;
+    min-height: 50px;
+    max-height: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: solid 1px #ba222e;
+    overflow: hidden;
+}
+
+.foto_curiosidade {
+    float: left;
+    width: 450px;
+    min-height: 50px;
+    max-height: auto;
+}
+
+.titulo_curiosidade_cad {
+    float: left;
+    min-width: 300px;
+    max-width: 550px;
+    min-height: 50px;
+    max-height: auto;
+    font-size: 28px;
+    padding-left: 50px;
+}
+
+.cad_sobre {
+    width: 1000px;
+    min-height: 700px;
+    max-height: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.sobreAdm {
+    width: 100%;
+    height: 70px;
+    font-size: 28px;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: solid 1px #ba222e;
+}
+
+.sobre_s {
+    width: 300px;
+    min-height: 200px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre_bd {
+    width: 100%;
+    min-height: 300px;
+    max-height: auto;
+    border-top: solid 1px #ba222e;
+}
+
+.titulo_sobreBD {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    padding-top: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: solid 1px #ba222e;
+    text-align: center;
+}
